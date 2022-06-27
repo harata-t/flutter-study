@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../my_home_page.dart';
+import '../first_page.dart';
+import '../second_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +18,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
-      home: const MyHomePage(title: 'Flutter sample app'),
+      // home: const MyHomePage(title: 'Flutter sample app'),
+      initialRoute: '/',
+      routes:{
+        // When navigating to the "/" route, build the FirstScreen widget.
+        '/': (context) => FirstPage(),
+        // When navigating to the "/second" route, build the SecondScreen widget.
+        '/second': (context) => SecondPage(),
+      },
     );
   }
 }
