@@ -16,6 +16,12 @@ class FirstPage extends StatelessWidget {
                  Navigator.pushNamed(context, "/second");
               },
               icon: const Icon(Icons.arrow_forward),
+            ),
+            ElevatedButton(
+                child : const Text ('grid page' ),
+                onPressed:(){
+                    Navigator.pushNamed(context, "/grid");
+                },
             )
           ],
         ),
