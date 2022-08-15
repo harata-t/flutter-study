@@ -23,6 +23,12 @@ class FirstPage extends StatelessWidget {
               },
               child: const Text('count page'),
             ),
+            ElevatedButton(
+              onPressed: () {
+              Navigator.pushNamed(context, "/youtube");
+              },
+              child: const Text('youtube page'),
+            ),
           ],
         ),
       ),
