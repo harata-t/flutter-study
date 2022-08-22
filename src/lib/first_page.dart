@@ -29,6 +29,18 @@ class FirstPage extends StatelessWidget {
               },
               child: const Text('youtube page'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/login");
+              },
+              child: const Text('login page'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/register");
+              },
+              child: const Text('register page'),
+            ),
           ],
         ),
       ),
